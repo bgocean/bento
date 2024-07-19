@@ -1,0 +1,40 @@
+@media (max-width: 1200px) {
+  .header {
+    &__btn {
+      margin-right: auto;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .header {
+    &__inner {
+      justify-content: flex-end;
+    }
+    &__logo {
+      margin-right: auto;
+      order: -1;
+    }
+    &__menu {
+      order: -1;
+    }
+    &__btn {
+      margin: 20px 0 0 150px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .header {
+    &__logo img {
+      width: 250px;
+    }
+    &__btn {
+      margin-left: auto;
+    }
+  }
+  .btn {
+    padding: 18px 50px;
+    font-size: 18px;
+  }
+}
