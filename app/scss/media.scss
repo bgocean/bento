@@ -22,13 +22,16 @@
       margin: 20px 0 0 150px;
     }
   }
+  .footer {
+    &__btn {
+      margin-left: auto;
+      margin-top: 20px;
+    }
+  }
 }
 
 @media (max-width: 560px) {
   .header {
-    &__logo img {
-      width: 250px;
-    }
     &__btn {
       margin-left: auto;
     }
@@ -36,5 +39,19 @@
   .btn {
     padding: 18px 50px;
     font-size: 18px;
+  }
+  .logo {
+    img {
+      width: 250px;
+    }
+  }
+  .footer {
+    &__inner {
+      padding: 50px 10px 22px;
+    }
+    &__contacts-item {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
   }
 }
