@@ -122,4 +122,55 @@ body {
   }
 }
 
+.top {
+  margin-bottom: 50px;
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 250px 500px;
+    gap: 20px;
+  }
+
+  &__about {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-image: url("../images/top-aboutbg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &__info {
+  }
+  &__info-title {
+  }
+  &__text {
+  }
+  &__slogan {
+  }
+  &__title {
+  }
+  &__image {
+  }
+  &__promo {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-image: url("../images/promo-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__promo-title {
+  }
+  &__promo-text {
+  }
+  &__promo-img {
+  }
+  &__promo-btn {
+  }
+}
+
 @import "media";
+
+
+// 19.35
