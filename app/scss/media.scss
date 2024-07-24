@@ -1,7 +1,54 @@
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   .header {
     &__btn {
       margin-right: auto;
+    }
+  }
+  .top {
+    &__inner {
+      grid-template-rows: 220px 390px;
+    }
+    &__title {
+      font-size: 54px;
+    }
+    &__image {
+      max-width: 80%;
+    }
+    &__promo {
+      background-position: bottom;
+      padding-top: 106px;
+    }
+    &__promo-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    &__promo-text {
+      margin-bottom: 10px;
+    }
+    &__promo-img {
+      margin-bottom: 10px;
+      max-width: 70%;
+    }
+    &__promo-btn {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .top {
+    &__inner {
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 200px 350px;
+    }
+    &__about {
+      padding-top: 20px;
+    }
+    &__title {
+      line-height: 1;
+    }
+    &__slogan {
+      padding-left: 60px;  //01.08.28
     }
   }
 }

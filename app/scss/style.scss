@@ -54,6 +54,15 @@ body {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
+  @media (max-width: 1240px) {
+    max-width: 1000px;
+  }
+  @media (max-width: 1020px) {
+    max-width: 768px;
+  }
+  @media (max-width: 770px) {
+    max-width: 414px;
+  }
 }
 
 .btn {
@@ -235,4 +244,3 @@ body {
 @import "media";
 
 
-// 00.40.40
