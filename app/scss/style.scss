@@ -63,6 +63,10 @@ body {
   font-size: 20px;
   padding: 18px 65px;
   border-radius: 30px;
+  &:hover {
+    background-color: #3c342e;
+    color: #fff;
+  }
 }
 
 .header {
@@ -166,10 +170,11 @@ body {
   }
 
   &__title {
+    padding-top: 5px;
     font-size: 64px;
     font-weight: 700;
     max-width: 600px;
-    margin: 0 auto 15px;
+    margin: 0 auto 30px;
   }
 
   &__image {
@@ -185,21 +190,49 @@ body {
     background-size: cover;
     text-align: center;
     color: #fff;
+    align-self: self-end;
+    padding-top: 138px;
   }
 
   &__promo-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
   }
 
   &__promo-text {
+    max-width: 175px;
+    margin: 0 auto 15px;
+    span {
+      display: block;
+    }
   }
 
   &__promo-img {
     border-radius: 30px;
     max-width: 100%;
+    margin-bottom: 15px;
   }
 
   &__promo-btn {
+    display: inline-block;
+    padding: 13px 37px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #000;
+    &:hover {
+      background-color: #8f7e70;
+      color: #000;
+    }
   }
 }
 
 @import "media";
+
+
+// 00.40.40
