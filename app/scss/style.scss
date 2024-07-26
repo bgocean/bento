@@ -266,4 +266,34 @@ body {
   }
 }
 
+.about {
+  margin-bottom: 50px;
+  &__inner {
+    background-color: #ccc1b4;
+    padding: 50px 50px 137px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    max-width: 838px;
+  }
+  &__text {
+    margin-bottom: 55px;
+    max-width: 952px;
+  }
+}
+
+
+// 10.00
+
 @import "media";
