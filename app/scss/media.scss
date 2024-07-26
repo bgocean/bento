@@ -42,18 +42,27 @@
       grid-template-rows: 200px 350px;
     }
     &__about {
-      padding-top: 20px;
+      padding-top: 40px;
     }
     &__title {
       line-height: 1;
     }
     &__slogan {
-      padding-left: 60px;  //01.08.28
+      padding-left: 60px;
+    }
+    &__promo-title {
+      margin-bottom: 7px;
+    }
+    &__promo-text {
+      margin-bottom: 5px;
+    }
+    &__promo-img {
+      margin-bottom: 5px;
+    }
+    &__promo-btn {
+      margin-bottom: 10px;
     }
   }
-}
-
-@media (max-width: 920px) {
   .header {
     &__inner {
       justify-content: flex-end;
@@ -77,7 +86,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 770px) {
   .header {
     &__btn {
       margin-left: auto;
@@ -99,6 +108,46 @@
     &__contacts-item {
       flex-basis: 100%;
       margin-bottom: 30px;
+    }
+  }
+  .top {
+    &__inner {
+      display: block;
+    }
+    &__about {
+      display: block;
+      padding-top: 0;
+      background-image: none;
+      background-color: #8f7e70;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    &__slogan {
+      padding-left: 0;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 1.2;
+    }
+    &__image {
+      max-width: 100%;
+    }
+    &__promo {
+      padding: 20px;
+      border-radius: 30px;
+    }
+    &__promo-title {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    &__promo-text {
+      margin-bottom: 15px;
+    }
+    &__promo-img {
+      margin-bottom: 15px;
+    }
+    &__promo-btn {
+      margin-bottom: 0;
     }
   }
 }
