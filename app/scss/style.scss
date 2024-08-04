@@ -272,7 +272,7 @@ body {
   }
 }
 
-.about { 
+.about {
   &__wrapper {
     position: relative;
     padding-bottom: 137px;
@@ -306,7 +306,7 @@ body {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
-    
+
     max-width: 838px;
   }
   &__text {
@@ -319,22 +319,23 @@ body {
   margin-bottom: 80px;
   &__inner {
     background-image: url("../images/projects-bg.webp");
-    background-repeat: no-repeat;    
-    padding: 160px 85px 0 50px;    
+    background-repeat: no-repeat;
+    padding: 160px 85px 0 50px;
   }
 
   &__title {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 50px
+    margin-bottom: 50px;
   }
 
   &__slider {
     margin-top: -150px;
   }
 
-  &__slide {}
+  &__slide {
+  }
 
   &__slide-title {
     max-width: 441px;
@@ -352,25 +353,44 @@ body {
     gap: 56px;
   }
 
-  &__slide-content {}
+  &__slide-content {
+  }
 
-  &__slide-subtitle {    
-    font-weight: 700;    
+  &__slide-subtitle {
+    font-weight: 700;
     margin-bottom: 15px;
     max-width: 318px;
   }
 
   &__slide-text {
     max-width: 318px;
+    margin-bottom: 45px;
   }
 
-  &__slide-info {}
+  &__slide-info {
+    display: flex;
+    gap: 10px;
+    li {
+      width: 120px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #3c342e;
+      border-radius: 20px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    sup {
+      font-size: 12px;
+      margin-top: -4px;
+    }
+  }
 
-  &__slide-image {}
+  &__slide-image {
+  }
 }
-
-
-
-
 
 @import "media";
