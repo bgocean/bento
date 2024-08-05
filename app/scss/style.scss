@@ -382,6 +382,11 @@ body {
       font-weight: 700;
       font-size: 20px;
       text-transform: uppercase;
+      &:last-child{
+        background-color: transparent;
+        background-image: url(../images/li-bg.webp);
+        
+      }
     }
     sup {
       font-size: 12px;
