@@ -369,6 +369,8 @@ body {
 
   &__slide-info {
     display: flex;
+    align-items: flex-end;
+    margin-top: -65px;
     gap: 10px;
     li {
       width: 120px;
@@ -382,15 +384,23 @@ body {
       font-weight: 700;
       font-size: 20px;
       text-transform: uppercase;
-      &:last-child{
+      position: relative;
+      &:last-child {
         background-color: transparent;
         background-image: url(../images/li-bg.webp);
-        
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        height: 130px;
       }
     }
     sup {
       font-size: 12px;
       margin-top: -4px;
+    }
+    span{
+      position: absolute;
+      bottom: 18px;
     }
   }
 
