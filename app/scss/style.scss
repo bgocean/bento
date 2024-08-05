@@ -403,7 +403,11 @@ body {
       bottom: 18px;
     }
   }
-
+  &__slider-btn {
+    &::after {
+      display: none;
+    }
+  }
   &__slide-image {
   }
 }
