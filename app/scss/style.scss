@@ -332,9 +332,7 @@ body {
 
   &__slider {
     margin-top: -150px;
-  }
-
-  &__slide {
+    padding-bottom: 5px;
   }
 
   &__slide-title {
@@ -351,9 +349,6 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 56px;
-  }
-
-  &__slide-content {
   }
 
   &__slide-subtitle {
@@ -398,17 +393,30 @@ body {
       font-size: 12px;
       margin-top: -4px;
     }
-    span{
+    span {
       position: absolute;
       bottom: 18px;
     }
   }
   &__slider-btn {
+    bottom: 0;
+    top: auto;
+    background-color: #8f7e70;
+    width: 68px;
+    height: 40px;
+    border-radius: 30px;
     &::after {
       display: none;
     }
   }
-  &__slide-image {
+
+  .swiper-button-prev {
+    left: auto;
+    right: 552px;
+  }
+  .swiper-button-next {
+    transform: rotate(2deg);
+    right: 0px;
   }
 }
 
