@@ -464,7 +464,7 @@ body {
   }
 
   &__size {
-    background-color: #3C342E;
+    background-color: #3c342e;
     border-radius: 30px;
     color: #fff;
     font-size: 20px;
@@ -473,6 +473,16 @@ body {
     text-transform: uppercase;
     flex-basis: 209px;
     text-align: center;
+  }
+
+  &__content-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list-left {
+    height: 100%;
+    align-content: center;
   }
 
   &__btn {
