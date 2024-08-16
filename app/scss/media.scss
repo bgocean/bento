@@ -33,6 +33,32 @@
       margin-bottom: 20px;
     }
   }
+  .projects {
+    &__inner {
+      padding-right: 40px;
+    }
+    &__slide-image {
+      width: 48%;
+      object-fit: contain;
+    }
+    &__slider-btn {
+      background-color: #3c342e;
+      bottom: 25px;
+      width: 44px;
+      height: 30px;
+    }
+    .swiper-button-prev{
+      right: 376px;
+    }
+    .swiper-button-next {
+      right: 2px;
+    }
+  }
+  .tariffs {
+    &__list-item {
+      margin-left: 40px;
+    }
+  }
 }
 
 @media (max-width: 1020px) {
@@ -159,3 +185,6 @@
     }
   }
 }
+
+
+// 13.00

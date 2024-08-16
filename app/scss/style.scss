@@ -8,6 +8,7 @@
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Bold.woff2") format("woff2"),
@@ -49,6 +50,11 @@ body {
   font-size: 16px;
   line-height: 1.2;
   color: #000;
+}
+
+sup {
+  font-size: 12px;
+  margin-top: -4px;
 }
 
 .container {
@@ -388,11 +394,7 @@ body {
         text-align: center;
         height: 130px;
       }
-    }
-    sup {
-      font-size: 12px;
-      margin-top: -4px;
-    }
+    }    
     span {
       position: absolute;
       bottom: 18px;
@@ -471,8 +473,10 @@ body {
     font-weight: 700;
     padding: 19px;
     text-transform: uppercase;
-    flex-basis: 209px;
-    text-align: center;
+    flex-basis: 209px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__content-left {
