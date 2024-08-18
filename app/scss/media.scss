@@ -158,17 +158,16 @@
     &__slider-btn {
       bottom: 9px;
     }
-    
   }
   .tariffs {
     &__inner {
       display: block;
     }
-    &__content-left{
+    &__content-left {
       margin-bottom: 40px;
     }
-    &__info{
-     justify-content: space-between;
+    &__info {
+      justify-content: space-between;
     }
   }
 }
@@ -242,6 +241,66 @@
       flex-wrap: wrap;
     }
     &__item {
+      flex-basis: 100%;
+    }
+  }
+  .about {
+    &__inner {
+      padding: 50px 10px 20px;
+    }
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  .projects {
+    &__inner {
+      padding: 50px 10px 20px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__slide-inner {
+      gap: 25px;
+    }
+    &__slide-btn {
+      bottom: 0;
+    }
+    &__slide-title {
+      font-size: 30px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &__slide-info {
+      flex-wrap: wrap;
+      li {
+        width: 48%;
+        &:last-child {
+          background-size: cover;
+          height: 153px;
+        }
+      }
+    }
+  }
+  .swiper-button-next {
+    right: 50px;
+  }
+  .swiper-button-prev {
+    left: 5px;
+  }
+  .tariffs {
+    &__info {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__size {
+      margin-bottom: 20px;
+      flex-basis: 100%;
+    }
+    &__btn {
       flex-basis: 100%;
     }
   }
