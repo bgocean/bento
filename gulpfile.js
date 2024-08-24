@@ -14,6 +14,7 @@ const fonter = require("gulp-fonter");
 const ttf2woff2 = require("gulp-ttf2woff2");
 const svgSprite = require("gulp-svg-sprite");
 const include = require("gulp-include");
+const replace = require("gulp-replace"); // Новый плагин
 
 function pages() {
   return src("app/pages/*.html")
@@ -24,6 +25,14 @@ function pages() {
     )
     .pipe(dest("app"))
     .pipe(browserSync.stream());
+}
+
+function moveIndex() {
+  return src("app/index.html")
+    .pipe(
+      replace(/src\//g, '') // Обновляем пути к ресурсам
+    )
+    .pipe(dest("./")); // Копируем index.html в корень
 }
 
 function fonts() {
@@ -70,8 +79,9 @@ function sprite() {
 }
 
 function scripts() {
-  return src(["node_modules/swiper/swiper-bundle.js",
-   "app/js/main.js"
+  return src([
+    "node_modules/swiper/swiper-bundle.js",
+    "app/js/main.js"
   ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
@@ -91,14 +101,14 @@ function styles() {
 function watching() {
   browserSync.init({
     server: {
-      baseDir: "app/",
+      baseDir: "./",
     },
   });
   watch(["app/scss/style.scss", "app/scss/media.scss"], styles);
   watch(["app/images/src"], images);
   watch(["app/js/main.js"], scripts);
-  watch(["app/components/*", "app/pages/*"], pages);
-  watch(["app/*.html"]).on("change", browserSync.reload);
+  watch(["app/components/*", "app/pages/*"], series(pages, moveIndex));
+  watch(["index.html"]).on("change", browserSync.reload);
 }
 
 function cleanDist() {
@@ -115,20 +125,20 @@ function building() {
       "app/images/sprite.svg",
       "app/fonts/*.*",
       "app/js/main.min.js",
-      "app/**/*.html",
+      "index.html", // Учтите, что index.html теперь в корне
     ],
-    { base: "app" }
+    { base: "./" }
   ).pipe(dest("dist"));
 }
 
 exports.styles = styles;
 exports.images = images;
 exports.fonts = fonts;
-exports.pages = pages;
+exports.pages = series(pages, moveIndex);
 exports.building = building;
 exports.sprite = sprite;
 exports.scripts = scripts;
 exports.watching = watching;
 
 exports.build = series(cleanDist, building);
-exports.default = parallel(styles, images, scripts, pages, watching);
+exports.default = parallel(styles, images, scripts, exports.pages, watching);
