@@ -19,7 +19,6 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-include": "^2.4.1",
     "gulp-newer": "^1.4.0",
-    "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
     "gulp-svg-sprite": "^2.0.3",
     "gulp-ttf2woff2": "^4.0.1",
